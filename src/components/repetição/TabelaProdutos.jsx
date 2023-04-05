@@ -7,7 +7,7 @@ export default props => {
     function getLinhas(){
         return produtos.map((produtos, i) =>{
             return (
-                <tr key={produtos.id} className={i % 2 == 0 ? 'Par' : 'Impar'}>
+                <tr key={produtos.id} className={i % 2 === 0 ? 'Par' : 'Impar'}>
                     <td>{produtos.id}</td>
                     <td>{produtos.nome}</td>
                     <td>R$ { produtos.preco.toFixed(2).replace('.', ',')}</td>
