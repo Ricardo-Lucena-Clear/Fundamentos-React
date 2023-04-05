@@ -7,6 +7,7 @@ import Fragmento from './components/basicos/Fragmento';
 import Aleatorio from "./components/basicos/Aleatorio";
 import Familia from "./components/basicos/Familia";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
+import ListaAlunos from "./components/repetição/ListaAlunos";
 
 
 export default () => (
@@ -14,44 +15,48 @@ export default () => (
         <h1>Fundamentos React</h1>
 
         <div className="Cards">
-            <Card titulo="#05 - Componentes com filhos" color="#00C8F8">
+        <Card titulo="#06 - Repetição" color="#ff4c65">
+            <ListaAlunos></ListaAlunos>   
+        </Card>
 
-                <Familia sobrenome="Cardoso">
-                    <FamiliaMembro nome="João"/>
-                    <FamiliaMembro nome="Henrique"/>
-                    <FamiliaMembro nome="Julio"/>
-                </Familia>
+        <Card titulo="#05 - Componentes com filhos" color="#00C8F8">
 
-            </Card>
+            <Familia sobrenome="Cardoso">
+                <FamiliaMembro nome="João" />
+                <FamiliaMembro nome="Henrique" />
+                <FamiliaMembro nome="Julio" />
+            </Familia>
 
-            <Card titulo="#04 - Desafio Aleatorio" color="#FA6900">
+        </Card>
 
-                <Aleatorio min={1} max={60} />
+        <Card titulo="#04 - Desafio Aleatorio" color="#FA6900">
 
-            </Card>
+            <Aleatorio min={1} max={60} />
 
-            <Card titulo="#03 - Fragmento" color="#E94C6F">
+        </Card>
 
-                <Fragmento />
+        <Card titulo="#03 - Fragmento" color="#E94C6F">
 
-            </Card>
+            <Fragmento />
 
-            <Card titulo="#02 - Com parametro" color="#E8B71A">
+        </Card>
 
-                <ComParametro titulo="Situação do Aluno" aluno="Pedro" nota={9.3} />
+        <Card titulo="#02 - Com parametro" color="#E8B71A">
 
-            </Card>
+            <ComParametro titulo="Situação do Aluno" aluno="Pedro" nota={9.3} />
 
-            <Card titulo="#01 - Primeiro" color="#588C73">
+        </Card>
 
-                <Primeiro></Primeiro>
+        <Card titulo="#01 - Primeiro" color="#588C73">
 
-            </Card>
+            <Primeiro></Primeiro>
 
+        </Card>
 
-
-        </div>
 
 
     </div>
+
+
+    </div >
 );
